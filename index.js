@@ -10,11 +10,11 @@
   var regExps = [
     {
       // bilibili & b23 video
-      from: /<a href="(?:https?:\/\/)?(?:www\.)?(?:bilibili|b23)\.(?:tv|com)(?:\/video)?\.*?">bplayer<\/a>/g,
+      from:  /<a href="(?:https?:\/\/)?(?:www\.)?(?:bilibili|b23)\.(?:tv|com)(?:\/video)?\/(.*)?">bplayer<\/a>/g,
       // prettier-ignore
       to:
         '<div class="video-plugin-box bilibili embed-responsive embed-responsive-16by9">' +
-            '<iframe src="//player.bilibili.com/player.html?aid=$1&cid=105486090&page=1" scrolling="no" border="0" frameborder="no" framespacing="0"></iframe>' +
+            '<iframe src="//player.bilibili.com/player.html?bvid=$1&cid=105486090&page=1" scrolling="no" border="0" frameborder="no" framespacing="0"></iframe>' +
         '</div>'
     },
     {

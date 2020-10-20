@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-href2video-bilibili",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "this plugin embeds an videoplayer. when upload a video this does not appear as a link but as players in the content.",
   "main": "index.js",
   "scripts": {
