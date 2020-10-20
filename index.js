@@ -10,7 +10,7 @@
   var regExps = [
     {
       // bilibili & b23 video
-      from: /<a href="(?:https?:\/\/)?(?:www\.)?(?:bilibili|b23)\.(?:tv|com)(?:\/video)?\/av(\d+).*?">bplayer<\/a>/g,
+      from: /<a href="(?:https?:\/\/)?(?:www\.)?(?:bilibili|b23)\.(?:tv|com)(?:\/video)?\.*?">bplayer<\/a>/g,
       // prettier-ignore
       to:
         '<div class="video-plugin-box bilibili embed-responsive embed-responsive-16by9">' +
