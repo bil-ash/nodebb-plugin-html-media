@@ -4,6 +4,4 @@ this plugin embeds an videoplayer. when upload a video this does not appear as a
 
 ## use
 
-`[bplayer](https://bilibili.com/video/avxxxxx)` and `[bplayer](https://b23.tv/avxxxxx)` will render bilibili video.
-
-`[lplayer](/assets/you/path/file.mp4[.avi])` render HTML5 video player.
+`[local-player](/assets/you/path/file.mp4[.avi])` render HTML5 video player.
