@@ -5,7 +5,7 @@
       // local video
       from: /<a href="\/(:*.*.(mp4|ogv|mov|webm))">local-player<\/a>/g,
       // prettier-ignore
-      to: '<video src="/$1" controls preload autobuffer width="100%" />' 
+      to: '<video src="/$1" controls preload autobuffer style="max-height: 450px;"/>' 
     }
   ]
 

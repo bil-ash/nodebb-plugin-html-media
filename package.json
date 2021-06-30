@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-href2video-local",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "this plugin embeds an videoplayer. when upload a video this does not appear as a link but as players in the content.",
   "main": "index.js",
   "scripts": {
