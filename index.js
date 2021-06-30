@@ -1,32 +1,11 @@
 'use strict'
 ;(function(VideoPlayer) {
-  var videoTypeMap = {
-    ogv: 'type=\'video/ogg; codecs="theora, vorbis"\'',
-    mp4: 'type=\'video/mp4; codecs="avc1.42E01E, mp4a.40.2"\'',
-    mov: 'type=\'video/mp4; codecs="avc1.42E01E, mp4a.40.2"\'',
-    webm: 'type=\'video/webm; codecs="vp8, vorbis"\' />'
-  }
-
   var regExps = [
     {
-      // bilibili & b23 video
-      from:  /<a href="(?:https?:\/\/)?(?:www\.)?(?:bilibili|b23)\.(?:tv|com)(?:\/video)?\/(.*)?">bplayer<\/a>/g,
-      // prettier-ignore
-      to:
-        '<div class="video-plugin-box bilibili embed-responsive embed-responsive-16by9">' +
-            '<iframe src="//player.bilibili.com/player.html?bvid=$1&cid=105486090&page=1" scrolling="no" border="0" frameborder="no" framespacing="0"></iframe>' +
-        '</div>'
-    },
-    {
       // local video
-      from: /<a href="\/(:*.*.(mp4|ogv|mov|webm))">lplayer<\/a>/g,
+      from: /<a href="\/(:*.*.(mp4|ogv|mov|webm))">local-player<\/a>/g,
       // prettier-ignore
-      to:
-        '<div class="video-plugin-box local"  data-src="$1" data-type="video/mp4" data-codec="avc1.42E01E, mp4a.40.2">' +
-            '<video class="vplayer" controls preload  autobuffer>' +
-                '<source src="/$1" />' +
-            '</video>' +
-        '</div>'
+      to: '<video src="/$1" controls preload autobuffer width="100%" />' 
     }
   ]
 
