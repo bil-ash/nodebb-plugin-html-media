@@ -1,5 +1,5 @@
 {
-  "name": "nodebb-plugin-href2video-bilibili",
+  "name": "nodebb-plugin-href2video-local",
   "version": "0.0.3",
   "description": "this plugin embeds an videoplayer. when upload a video this does not appear as a link but as players in the content.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrispei/nodebb-plugin-href2video.git"
+    "url": "git+https://github.com/lin1005q/nodebb-plugin-href2video.git"
   },
   "nbbpm": {
     "compatibility": ">=0.7.0"
@@ -22,9 +22,5 @@
     "ogv",
     "mp4",
     "mov"
-  ],
-  "author": {
-    "name": "shiyi",
-    "email": "i@runtua.cn"
-  }
+  ]
 }
