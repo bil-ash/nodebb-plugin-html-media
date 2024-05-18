@@ -1,4 +1,4 @@
-# nodebb-plugin-href2video-local
+# nodebb-plugin-htmvid
 
 this plugin embeds an videoplayer. when upload a video this does not appear as a link but as players in the content.
 

@@ -1,5 +1,5 @@
 {
-  "name": "nodebb-plugin-href2video-local",
+  "name": "nodebb-plugin-htmvid",
   "version": "0.0.4",
   "description": "this plugin embeds an videoplayer. when upload a video this does not appear as a link but as players in the content.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lin1005q/nodebb-plugin-href2video.git"
+    "url": "git+https://github.com/bil-ash/nodebb-plugin-htmvid.git"
   },
   "nbbpm": {
     "compatibility": ">=0.7.0"
@@ -22,5 +22,9 @@
     "ogv",
     "mp4",
     "mov"
-  ]
+  ],
+  "dependencies": {
+    "ffmpeg-static":"^5.2.0",
+    "any-shell-escape":"^0.1.1"
+  }
 }

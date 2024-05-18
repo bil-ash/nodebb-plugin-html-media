@@ -3,9 +3,9 @@
   var regExps = [
     {
       // local video
-      from: /<a href="\/(:*.*.(mp4|ogv|mov|webm))">local-player<\/a>/g,
+      from: /<a href="\/(:*.*.(mp4|webm))">.*<\/a>/g,
       // prettier-ignore
-      to: '<video src="/$1" controls preload autobuffer style="max-height: 450px;"/>' 
+      to: '<video src="/$1" controls="controls" controlslist="nodownload" preload="metadata" style="width: 100%;object-fit: contain;"/>' 
     }
   ]
 

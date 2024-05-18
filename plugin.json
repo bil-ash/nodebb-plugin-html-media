@@ -1,8 +1,8 @@
 {
-    "id": "nodebb-plugin-href2video-local",
-    "name": "NodeBB Vido Player Plugin",
+    "id": "nodebb-plugin-htmvid",
+    "name": "NodeBB htmvid Player Plugin",
     "description": "this plugin embeds an video player.",
-    "url": "https://github.com/lin1005q/nodebb-plugin-href2video",
+    "url": "https://github.com/bil-ash/nodebb-plugin-htmvid",
     "library": "./index.js",
     "hooks": [{ "hook": "filter:parse.post", "method": "parse", "callbacked": true }]
 }
