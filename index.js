@@ -35,10 +35,12 @@
 
     callback(err, data)
   }
-
+/*
   VideoPlayer.addScripts = function(scripts, callback) {
       //TODO 判断是否支持 HTML5 video 标签
-    scripts.push('/static/html5media.min.js')
+    scripts.push('/static/html4media.min.js')
     callback(null, scripts)
   }
+//guess this is not required
+  */
 })(module.exports)
