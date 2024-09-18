@@ -6,6 +6,12 @@
       from: /<a href="\/(:*.*.(mp4|webm))">.*<\/a>/g,
       // prettier-ignore
       to: '<video src="/$1" controls="controls" controlslist="nodownload" preload="metadata" style="width: 100%;object-fit: contain;"/>' 
+    },
+    {
+      // local audio
+      from: /<a href="\/(:*.*.(mp3|aac))">.*<\/a>/g,
+      // prettier-ignore
+      to: '<audio src="/$1" controls="controls" controlslist="nodownload" preload="metadata"/>' 
     }
   ]
 

@@ -1,7 +1,7 @@
 {
-  "name": "nodebb-plugin-htmvid",
-  "version": "0.0.4",
-  "description": "this plugin embeds an videoplayer. when upload a video this does not appear as a link but as players in the content.",
+  "name": "nodebb-plugin-htmml-media",
+  "version": "0.0.5",
+  "description": "This plugin embeds a mediaplayer. When a media file is uploaded,it does not appear as a link but as players in the content.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
