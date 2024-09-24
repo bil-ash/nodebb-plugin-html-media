@@ -1,5 +1,5 @@
 {
-  "name": "nodebb-plugin-htmml-media",
+  "name": "nodebb-plugin-html-media",
   "version": "0.0.5",
   "description": "This plugin embeds a mediaplayer. When a media file is uploaded,it does not appear as a link but as players in the content.",
   "main": "index.js",
